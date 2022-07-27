@@ -42,7 +42,7 @@ iframe#tela {
 
 }
 
-section#redes-sociais img{
+section#redes-sociais img {
     width: 50px;
     margin: 10px;
     border-radius: 50%;
@@ -50,14 +50,50 @@ section#redes-sociais img{
     box-sizing: border-box;
 }
 
-section#redes-sociais img:hover{
+section#redes-sociais img:hover {
     border: 2px rgb(218, 215, 255, 0.637) solid;
-    transform:translate(-3px, -3px);
+    transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404);
     transition: transform .19s, border 0.01ms;
 }
 
-section#redes-sociais{
+section#redes-sociais {
     text-align: right;
 }
 
+
+@media only screen and (max-width: 480px) {
+
+    ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
+
+    section#telefone {
+        position: absolute;
+        top: 62%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        height: 627px;
+        width: 311px;
+        background: url(../imagens/frame-iphone_m.png) no-repeat;
+    }
+
+    iframe#tela {
+        top: 62px;
+        left: 17px;
+        width: 205px;
+        height: 362px;
+    }
+
+    section#redes-sociais img {
+        width: 50px;
+        margin: 10px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+        box-sizing: border-box;
+        position: relative;
+        left: -16px;
+    }
+
+}
